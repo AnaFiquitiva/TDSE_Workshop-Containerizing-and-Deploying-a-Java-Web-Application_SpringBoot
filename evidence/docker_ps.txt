@@ -1,0 +1,5 @@
+CONTAINER ID   IMAGE                                                                              COMMAND               CREATED          STATUS          PORTS                                           NAMES
+53ce04698720   anafiquitivapoveda/virtualization-lab:1.0                                          "java -jar app.jar"   16 seconds ago   Up 15 seconds   0.0.0.0:34002->6000/tcp, [::]:34002->6000/tcp   virtualization-lab-3
+eece73027dcb   anafiquitivapoveda/virtualization-lab:1.0                                          "java -jar app.jar"   17 seconds ago   Up 16 seconds   0.0.0.0:34001->6000/tcp, [::]:34001->6000/tcp   virtualization-lab-2
+c5da97b958ee   anafiquitivapoveda/virtualization-lab:1.0                                          "java -jar app.jar"   19 seconds ago   Up 17 seconds   0.0.0.0:34000->6000/tcp, [::]:34000->6000/tcp   virtualization-lab-1
+ed21fa0c459f   tdse_workshop-containerizing-and-deploying-a-java-web-application_springboot-web   "java -jar app.jar"   18 minutes ago   Up 18 minutes   0.0.0.0:8087->6000/tcp, [::]:8087->6000/tcp     virtualization-web

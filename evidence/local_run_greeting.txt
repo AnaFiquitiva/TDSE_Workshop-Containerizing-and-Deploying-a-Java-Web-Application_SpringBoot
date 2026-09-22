@@ -1,0 +1,9 @@
+$ mvn clean package
+[INFO] BUILD SUCCESS
+
+$ java -jar target/virtualization-lab-1.0.0.jar
+Tomcat started on port 6000 (http) with context path '/'
+Started RestServiceApplication in 3.499 seconds
+
+$ curl "http://localhost:6000/greeting?name=Pedro"
+Hello, Pedro!

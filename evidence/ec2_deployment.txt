@@ -1,0 +1,11 @@
+$ docker ps
+CONTAINER ID   IMAGE                                       COMMAND               CREATED          STATUS          PORTS                                       NAMES
+7a7a660a9395   anafiquitivapoveda/virtualization-lab:1.0   "java -jar app.jar"   47 seconds ago   Up 46 seconds   0.0.0.0:8080->6000/tcp, :::8080->6000/tcp   virtualization-lab
+
+$ docker logs virtualization-lab
+:: Spring Boot ::                (v4.1.1)
+Tomcat started on port 6000 (http) with context path '/'
+Started RestServiceApplication in 3.402 seconds
+
+$ curl "http://ec2-54-159-22-98.compute-1.amazonaws.com:8080/greeting?name=AWS"
+Hello, AWS!

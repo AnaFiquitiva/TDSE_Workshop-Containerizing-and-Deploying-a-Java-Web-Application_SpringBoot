@@ -1,0 +1,3 @@
+REPOSITORY                              TAG       IMAGE ID       CREATED          SIZE
+anafiquitivapoveda/virtualization-lab   1.0       956f1dfa72ec   56 seconds ago   771MB
+anafiquitivapoveda/virtualization-lab   latest    956f1dfa72ec   56 seconds ago   771MB

@@ -1,0 +1,9 @@
+.git
+.idea
+*.iml
+.mvn/wrapper
+target/classes
+target/test-classes
+target/generated-sources
+target/maven-*
+target/*.jar.original

@@ -1,0 +1,2 @@
+NAME                 IMAGE                                                                              COMMAND               SERVICE   CREATED          STATUS          PORTS
+virtualization-web   tdse_workshop-containerizing-and-deploying-a-java-web-application_springboot-web   "java -jar app.jar"   web       14 seconds ago   Up 13 seconds   0.0.0.0:8087->6000/tcp, [::]:8087->6000/tcp
