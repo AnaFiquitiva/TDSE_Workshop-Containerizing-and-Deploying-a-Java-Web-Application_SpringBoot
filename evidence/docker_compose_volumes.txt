@@ -1,0 +1,47 @@
+$ docker compose down
+ Container virtualization-web  Stopping
+ Container virtualization-web  Stopped
+ Container virtualization-web  Removing
+ Container virtualization-web  Removed
+ Container virtualization-db  Stopping
+ Container virtualization-db  Stopped
+ Container virtualization-db  Removing
+ Container virtualization-db  Removed
+ Network tdse_workshop-containerizing-and-deploying-a-java-web-application_springboot_default  Removing
+ Network tdse_workshop-containerizing-and-deploying-a-java-web-application_springboot_default  Removed
+
+$ docker volume ls --filter name=mongodb
+DRIVER    VOLUME NAME
+local     tdse_workshop-containerizing-and-deploying-a-java-web-application_springboot_mongodb
+local     tdse_workshop-containerizing-and-deploying-a-java-web-application_springboot_mongodb_config
+
+$ docker compose up -d
+ Container virtualization-db  Started
+ Container virtualization-web  Started
+
+$ docker compose exec db mongosh workshop --eval "db.messages.find()"   # el dato sobrevive al ciclo de vida del contenedor
+[
+  {
+    _id: ObjectId('6abaf60c827c38fa4c6e3d53'),
+    message: 'Hello from Docker Compose'
+  }
+]
+
+$ docker compose down -v
+ Container virtualization-web  Stopping
+ Container virtualization-web  Stopped
+ Container virtualization-web  Removing
+ Container virtualization-web  Removed
+ Container virtualization-db  Stopping
+ Container virtualization-db  Stopped
+ Container virtualization-db  Removing
+ Container virtualization-db  Removed
+ Volume tdse_workshop-containerizing-and-deploying-a-java-web-application_springboot_mongodb_config  Removing
+ Volume tdse_workshop-containerizing-and-deploying-a-java-web-application_springboot_mongodb  Removing
+ Network tdse_workshop-containerizing-and-deploying-a-java-web-application_springboot_default  Removing
+ Volume tdse_workshop-containerizing-and-deploying-a-java-web-application_springboot_mongodb_config  Removed
+ Volume tdse_workshop-containerizing-and-deploying-a-java-web-application_springboot_mongodb  Removed
+ Network tdse_workshop-containerizing-and-deploying-a-java-web-application_springboot_default  Removed
+
+$ docker volume ls --filter name=mongodb
+DRIVER    VOLUME NAME

@@ -1,2 +1,8 @@
-NAME                 IMAGE                                                                              COMMAND               SERVICE   CREATED          STATUS          PORTS
-virtualization-web   tdse_workshop-containerizing-and-deploying-a-java-web-application_springboot-web   "java -jar app.jar"   web       14 seconds ago   Up 13 seconds   0.0.0.0:8087->6000/tcp, [::]:8087->6000/tcp
+$ docker compose up -d --build
+ Container virtualization-db  Started
+ Container virtualization-web  Started
+
+$ docker compose ps
+NAME                 IMAGE                                                                              COMMAND                  SERVICE   CREATED          STATUS          PORTS
+virtualization-db    mongo:8                                                                            "docker-entrypoint.s…"   db        26 seconds ago   Up 23 seconds   0.0.0.0:27017->27017/tcp, [::]:27017->27017/tcp
+virtualization-web   tdse_workshop-containerizing-and-deploying-a-java-web-application_springboot-web   "java -jar app.jar"      web       25 seconds ago   Up 22 seconds   0.0.0.0:8087->6000/tcp, [::]:8087->6000/tcp

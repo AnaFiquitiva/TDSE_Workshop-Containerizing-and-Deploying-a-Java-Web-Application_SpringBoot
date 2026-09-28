@@ -1,3 +1,4 @@
+$ docker compose logs web
 virtualization-web  | 
 virtualization-web  |   .   ____          _            __ _ _
 virtualization-web  |  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -8,11 +9,14 @@ virtualization-web  |  =========|_|==============|___/=/_/_/_/
 virtualization-web  | 
 virtualization-web  |  :: Spring Boot ::                (v4.1.1)
 virtualization-web  | 
-virtualization-web  | 2026-09-22T14:28:35.633Z  INFO 1 --- [           main] c.edu.escuelaing.RestServiceApplication  : Starting RestServiceApplication v1.0.0 using Java 21.0.12.1 with PID 1 (/app/app.jar started by root in /app)
-virtualization-web  | 2026-09-22T14:28:35.641Z  INFO 1 --- [           main] c.edu.escuelaing.RestServiceApplication  : No active profile set, falling back to 1 default profile: "default"
-virtualization-web  | 2026-09-22T14:28:37.168Z  INFO 1 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 6000 (http)
-virtualization-web  | 2026-09-22T14:28:37.197Z  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-virtualization-web  | 2026-09-22T14:28:37.198Z  INFO 1 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
-virtualization-web  | 2026-09-22T14:28:37.253Z  INFO 1 --- [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1491 ms
-virtualization-web  | 2026-09-22T14:28:38.216Z  INFO 1 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 6000 (http) with context path '/'
-virtualization-web  | 2026-09-22T14:28:38.409Z  INFO 1 --- [           main] c.edu.escuelaing.RestServiceApplication  : Started RestServiceApplication in 3.472 seconds (process running for 5.404)
+virtualization-web  | 2026-09-28T23:19:03.494Z  INFO 1 --- [           main] c.edu.escuelaing.RestServiceApplication  : Starting RestServiceApplication v1.0.0 using Java 21.0.12.1 with PID 1 (/app/app.jar started by root in /app)
+virtualization-web  | 2026-09-28T23:19:03.500Z  INFO 1 --- [           main] c.edu.escuelaing.RestServiceApplication  : No active profile set, falling back to 1 default profile: "default"
+virtualization-web  | 2026-09-28T23:19:04.934Z  INFO 1 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 6000 (http)
+virtualization-web  | 2026-09-28T23:19:04.953Z  INFO 1 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+virtualization-web  | 2026-09-28T23:19:04.954Z  INFO 1 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+virtualization-web  | 2026-09-28T23:19:05.002Z  INFO 1 --- [           main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1400 ms
+virtualization-web  | 2026-09-28T23:19:05.692Z  INFO 1 --- [           main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 6000 (http) with context path '/'
+virtualization-web  | 2026-09-28T23:19:05.711Z  INFO 1 --- [           main] c.edu.escuelaing.RestServiceApplication  : Started RestServiceApplication in 3.11 seconds (process running for 4.231)
+
+$ curl "http://localhost:8087/greeting?name=Compose"
+Hello, Compose!

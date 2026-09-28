@@ -1,0 +1,6 @@
+$ docker compose logs db  (primeras líneas relevantes)
+virtualization-db  | {"t":{"$date":"2026-09-28T23:19:02.100+00:00"},"s":"I",  "c":"CONTROL",  "id":4615611, "ctx":"initandlisten","msg":"MongoDB starting","attr":{"pid":1,"port":27017,"dbPath":"/data/db","architecture":"64-bit","host":"5918b999b2d2"}}
+virtualization-db  | {"t":{"$date":"2026-09-28T23:19:02.112+00:00"},"s":"I",  "c":"CONTROL",  "id":23403,   "ctx":"initandlisten","msg":"Build Info","attr":{"buildInfo":{"version":"8.3.11","gitVersion":"b8b83d6e6e1aed495578ad8c6f9234ad329c9955","openSSLVersion":"OpenSSL 3.0.13 30 Jan 2024","modules":[],"allocator":"tcmalloc-google","environment":{"distmod":"ubuntu2404","distarch":"x86_64","target_arch":"x86_64"}}}}
+virtualization-db  | {"t":{"$date":"2026-09-28T23:19:03.798+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"0.0.0.0:27017"}}
+virtualization-db  | {"t":{"$date":"2026-09-28T23:19:03.799+00:00"},"s":"I",  "c":"NETWORK",  "id":23015,   "ctx":"listener","msg":"Listening on","attr":{"address":"/tmp/mongodb-27017.sock"}}
+virtualization-db  | {"t":{"$date":"2026-09-28T23:19:03.799+00:00"},"s":"I",  "c":"NETWORK",  "id":23016,   "ctx":"listener","msg":"Waiting for connections","attr":{"port":27017,"ssl":"off"}}

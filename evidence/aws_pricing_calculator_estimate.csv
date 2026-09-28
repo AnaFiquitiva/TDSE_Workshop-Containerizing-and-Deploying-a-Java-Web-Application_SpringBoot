@@ -1,0 +1,17 @@
+﻿Estimate summary
+Upfront cost,Monthly cost,Total 12 months cost,Currency
+0,100.95,1211.40,USD
+,,* Includes upfront cost
+
+
+Detailed Estimate
+Group hierarchy,Region,Description,Service,Upfront,Monthly,First 12 months total,Currency,Status,Configuration summary
+"My Estimate > Small workload (10,000 req/month)",US East (N. Virginia),Small workload - t3.micro,Amazon EC2 ,0,7.6819999999999995,92.18,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 1), Advance EC2 instance (t3.micro), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), DT Inbound: Not selected (0 TB per month), DT Outbound: Internet (1 GB per month), DT Intra-Region: (0 TB per month)"
+"My Estimate > Small workload (10,000 req/month)",US East (N. Virginia),Small workload - 8GB gp3,Amazon Elastic Block Store (EBS),0,5.53,66.36,USD,,"Number of volumes (1), Average duration of volume (730 hours per month), Storage amount per volume (8 GB), Snapshot Frequency (2x Daily), Amount changed per snapshot (3 GB), Provisioning IOPS per volume (gp3) (3000), General Purpose SSD (gp3) - Throughput (125 MBps)"
+"My Estimate > Medium workload (100,000 req/month)",US East (N. Virginia),,Amazon EC2 ,0,16.724,200.69,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 1), Advance EC2 instance (t3.small), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), EBS Storage amount (8 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Internet (10 GB per month), DT Intra-Region: (0 TB per month)"
+"My Estimate > Large workload (1,000,000 req/month)",US East (N. Virginia),,Amazon EC2 ,0,71.01599999999999,852.19,USD,,"Tenancy (Shared Instances), Operating system (Linux), Workload (Consistent, Number of instances: 2), Advance EC2 instance (t3.medium), Pricing strategy (On-Demand Utilization: 100 %Utilized/Month), Enable monitoring (disabled), EBS Storage amount (8 GB), DT Inbound: Not selected (0 TB per month), DT Outbound: Internet (100 GB per month), DT Intra-Region: (0 TB per month)"
+
+
+
+Acknowledgement
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."

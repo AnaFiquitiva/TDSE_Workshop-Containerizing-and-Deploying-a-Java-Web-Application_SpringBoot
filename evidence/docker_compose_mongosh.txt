@@ -1,0 +1,25 @@
+$ docker compose exec db mongosh
+
+test> show dbs
+admin  8.00 KiB
+config  12.00 KiB
+local  8.00 KiB
+
+test> use workshop
+switched to db workshop
+
+workshop> db.messages.insertOne({ message: "Hello from Docker Compose" })
+{
+  acknowledged: true,
+  insertedId: ObjectId('6abaf60c827c38fa4c6e3d53')
+}
+
+workshop> db.messages.find()
+[
+  {
+    _id: ObjectId('6abaf60c827c38fa4c6e3d53'),
+    message: 'Hello from Docker Compose'
+  }
+]
+
+workshop> exit
