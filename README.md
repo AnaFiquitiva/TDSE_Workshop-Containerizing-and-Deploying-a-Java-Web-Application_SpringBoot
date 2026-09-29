@@ -533,7 +533,9 @@ EC2 es apropiado para los escenarios mediano y grande evaluados aquí: USD 16.72
 
 ## Video de demostración
 
-📹 **Video:** _[agregar aquí el enlace al video (YouTube / Drive) antes de la entrega]_
+📹 **Video:** https://youtu.be/k8HInEJ6VzE
+
+Este video cubre el Repo 1 (Spring Boot). La extensión del framework tiene su propio video, enlazado en el README de ese repositorio: https://github.com/AnaFiquitiva/TDSE_Workshop-Containerizing-and-Deploying-a-Java-Web-Application_Framework-extension
 
 El video muestra:
 1. El despliegue local con Docker (`docker run` de las tres instancias aisladas y `docker compose up` con `web` + `db`), con las respuestas de `/greeting`.
